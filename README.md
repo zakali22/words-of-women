@@ -1,2 +1,1 @@
-# scaffolding-webpack-project
-A simple scaffolding for webpack based projects
+# A simple website to practice CSS/JS (part 7)
