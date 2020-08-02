@@ -7,7 +7,7 @@ document.addEventListener('scroll', () => {
     const firstAuthorSection = authors[0].offsetTop;
 
 
-    if(pixelScrolled > (firstAuthorSection - 20)){
+    if(pixelScrolled > (firstAuthorSection)){
         headerLogo.classList.add('scaleDown');
     } else {
         headerLogo.classList.remove('scaleDown');
