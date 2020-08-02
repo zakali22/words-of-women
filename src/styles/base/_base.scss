@@ -15,6 +15,7 @@ body {
     font-family: $primaryFont;
     background: $lightpeach;
     color: $darkgreen;
+    transition: background-color .6s ease;
 }
 
 h2, .h2 {

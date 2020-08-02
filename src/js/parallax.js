@@ -15,8 +15,8 @@ function scrollMovement(){
         // Apply our styling based on the scrolling
         const image = section.querySelector('img')
         const content = section.querySelector('.author__quote')
-        const rotation = distanceToMid / 100; // Weigh it down, in order to slow it
-        const contentMovement = (distanceToMid / 2) * (-1); // To move the top property by negative;
+        let rotation = distanceToMid / 100; // Weigh it down, in order to slow it
+        let contentMovement = (distanceToMid / 2) * (-1); // To move the top property by negative;
 
         // alternate rotation between each section
         if(index % 2 === 0){ // Determine if it's even or not
@@ -26,6 +26,12 @@ function scrollMovement(){
         image.style.transform = `rotate(${rotation}deg)`
         content.style.transform = `rotate(${(-1) * rotation}deg)`
         content.style.top = `${contentMovement}px`
+
+        // Change background-color
+        if(distanceToMid > 0){ // Just passed the middle of the page
+            const sectionBgColor = section.getAttribute('data-bgcolor')
+            body.style.backgroundColor = sectionBgColor
+        }
 
     })
 }
