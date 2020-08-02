@@ -16,6 +16,8 @@ body {
     background: $lightpeach;
     color: $darkgreen;
     transition: background-color .6s ease;
+    // for the progress-indicator
+    position: relative;
 }
 
 h2, .h2 {
@@ -61,4 +63,14 @@ section {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+// Progress-indicator
+.progress-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #15403d;
+    z-index: 100
 }
