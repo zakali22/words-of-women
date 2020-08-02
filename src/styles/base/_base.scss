@@ -15,6 +15,7 @@ body {
     font-family: $primaryFont;
     background: $lightpeach;
     color: $darkgreen;
+    transition: background-color .6s ease;
 }
 
 h2, .h2 {
@@ -35,6 +36,14 @@ h2, .h2 {
     &__logo {
         display: inline-block;
         height: $navbar-height;
+        img {
+            transition: transform .5s ease-in-out;
+        }
+        &.scaleDown {
+            img {
+                transform: scale(.7);
+            }
+        }
     }
 }
 
